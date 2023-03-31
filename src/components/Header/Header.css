@@ -1,3 +1,26 @@
 h1{
 margin-left: 30px;
 }
+nav{
+
+}
+.menubar{
+    display: flex;
+    gap: 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+.header-img{
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    left: 1540px;
+    top: 52px;
+
+}
+nav div h1{
+    margin-left: 100px;
+}
