@@ -10,7 +10,10 @@ const Blogs = () => {
             .then(res => res.json())
             .then(data => setBlogItems(data))
     }, []);
-
+const addToBookmark=() =>{
+    console.log('added book');
+}
+const addToBookmarkWithParam =()=>addToBookmark(blogItems);
     return (
         <div className='container'>
             <div className="blog-container">
@@ -22,7 +25,8 @@ const Blogs = () => {
                }
             </div>
             <div className="bookmark-container">
-                <h3>My Bookmark</h3>
+                <h3 className='spendTime'>Spent time on read : </h3>
+                <h3 onClick={addToBookmarkWithParam}>My Bookmark</h3>
             </div>
         </div>
     );
