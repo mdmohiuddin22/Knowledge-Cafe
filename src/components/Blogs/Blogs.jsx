@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Product from '../AllBlog/AllBlog';
 import "./Blogs.css"
+import AllBlog from '../AllBlog/AllBlog';
 
 const Blogs = () => {
+    const handleAddToBookMark =()=>{
+        console.log('added to items')
+    }
     const [blogItems, setBlogItems] = useState([]);
 
     useEffect(() => {
@@ -10,23 +13,22 @@ const Blogs = () => {
             .then(res => res.json())
             .then(data => setBlogItems(data))
     }, []);
-const addToBookmark=() =>{
-    console.log('added book');
-}
-const addToBookmarkWithParam =()=>addToBookmark(blogItems);
+
+
     return (
         <div className='container'>
             <div className="blog-container">
                {
-                blogItems.map(blogItem => <Product 
+                blogItems.map(blogItem => <AllBlog
                 key={blogItem.id}
                 blogItem={blogItem}
-                ></Product>)
+                ></AllBlog>)
+
                }
             </div>
             <div className="bookmark-container">
                 <h3 className='spendTime'>Spent time on read : </h3>
-                <h3 onClick={addToBookmarkWithParam}>My Bookmark</h3>
+                <h3>Bookmarked Blogs : </h3>
             </div>
         </div>
     );

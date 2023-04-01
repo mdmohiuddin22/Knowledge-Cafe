@@ -19,18 +19,29 @@
   margin: 10px;
 }
 .duration{
-  width: 105px;
-  height: 24px;
-  left: px;
-  top: 1541px;
-  
   font-family: 'Exo 2';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 500px;
+  margin-left: 320px;
+  display: flex;
 }
 .blogDetails{
   margin-left: 30px;
+}
+.mark{
+  width: 121px;
+height: 24px;
+left: 320px;
+top: 937px;
+
+font-family: 'Exo 2';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-decoration-line: underline;
+
+color: #6047EC;
 }
