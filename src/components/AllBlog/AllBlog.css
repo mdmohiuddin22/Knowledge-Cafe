@@ -10,3 +10,27 @@
   left: 1540px;
   top: 52px;
 }
+.nameDetails{
+  display: flex;
+  align-items: center;
+}
+.nameDate{
+  width: 146px;
+  margin: 10px;
+}
+.duration{
+  width: 105px;
+  height: 24px;
+  left: px;
+  top: 1541px;
+  
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 500px;
+}
+.blogDetails{
+  margin-left: 30px;
+}
