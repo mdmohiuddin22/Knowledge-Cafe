@@ -28,6 +28,7 @@ const Blogs = () => {
             </div>
             <div className="bookmark-container">
                 <h3 className='spendTime'>Spent time on read : </h3>
+                
                 <h3>Bookmarked Blogs : </h3>
             </div>
         </div>
